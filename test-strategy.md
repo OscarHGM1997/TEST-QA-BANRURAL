@@ -66,3 +66,28 @@ let userGuess = guessField.value;
     //El valor que se estaba guardando en la variable UserGuess es en texto, por lo cual es necesario
       convertirlo a número.
         /let userGuess = Number(guessField.value);
+
+
+====================================================================================================
+(Linea 31)
+<!--
+onkeyup="validacion(this)"
+-->
+Se agrega un evento sobre el input
+
+onkeyup="validacion(this)"
+(Linea 33)
+<!--<span id="error" style="color:red" ></span>-->
+Se agrega un span para mostrar un mensaje cuando el usuario ingrese un número con decimal
+
+(Linea 58 a la 63)
+<!--
+function validacion(elemento){
+    const error = document.getElementById('error');
+    if (/^\d+$/.test(elemento.value) == false){
+        error.innerHTML = 'El campo no debe de contener decimales'
+    } else 
+    {error.innerHTML = ''}}
+-->
+Se agrega una función que que al momento que suceda el evento del input, y el usuario ingrese un
+decimal en el recuadro, muestro el texto "El campo no debe de contener decimales"
