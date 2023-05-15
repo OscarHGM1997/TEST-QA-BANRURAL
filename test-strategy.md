@@ -49,3 +49,11 @@ guessSubmit.addeventListener('click', checkGuess);
 const lowOrHi = document.querySelector('lowOrHi');
     //Para llamar a un elemento por si id, siempre tiene que ir de la siguiente manera '.id'.
         //const lowOrHi = document.querySelector('.lowOrHi');
+*****************************************************************************************************
+Se pusieron 2 console.log(randomNumber) para ver si el programa si devuleve el número aleatorio y si
+lo hace, pero al ingresarlo no muestra el mensaje ganador...
+====================================================================================================
+(Linea 114)
+randomNumber = Math.floor(Math.random()) + 1;
+    //Similar al primer error detectado, el resultado del Math.random se debe de multiplicar por 100
+        //randomNumber = Math.floor(Math.random()*100) + 1;
