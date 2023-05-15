@@ -55,7 +55,7 @@
   console.log(randomNumber);
   function checkGuess() {
 
-    let userGuess = guessField.value;
+    let userGuess = Number(guessField.value);
     if(guessCount === 1) {
       guesses.textContent = 'Número aleatorio anterior: ';
     }

@@ -57,3 +57,12 @@ lo hace, pero al ingresarlo no muestra el mensaje ganador...
 randomNumber = Math.floor(Math.random()) + 1;
     //Similar al primer error detectado, el resultado del Math.random se debe de multiplicar por 100
         //randomNumber = Math.floor(Math.random()*100) + 1;
+*****************************************************************************************************
+Se pusieron 2 console.log(randomNumber) para ver si el programa si devuleve el número aleatorio y si
+lo hace, pero al ingresarlo no muestra el mensaje ganador...
+====================================================================================================
+(Linea 58)
+let userGuess = guessField.value;
+    //El valor que se estaba guardando en la variable UserGuess es en texto, por lo cual es necesario
+      convertirlo a número.
+        /let userGuess = Number(guessField.value);
