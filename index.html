@@ -53,16 +53,13 @@
 
   let guessCount = 1;
   let resetButton;
-  console.log(randomNumber);
 
   function validacion(elemento){
     const error = document.getElementById('error');
     if (/^\d+$/.test(elemento.value) == false){
         error.innerHTML = 'El campo no debe de contener decimales'
     } else 
-    {error.innerHTML = ''}
-
-}
+    {error.innerHTML = ''}}
 
   function checkGuess() {
 
@@ -123,7 +120,6 @@
 	  lastResult.style.backgroundColor = 'white';
 
 	  randomNumber = Math.floor(Math.random()*100) + 1;
-    console.log(randomNumber)
   }
 </script>
 </html>
